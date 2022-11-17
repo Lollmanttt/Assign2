@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #7e7272a1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* base font styles */
+    color: rgb(87, 78, 78);
+    font-size: 25px;
+    line-height: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    padding: 80px 50px;
+}
+
+header .wrapper {
+    padding: 20px 50px;
+}
+
+.container {
+    max-width: 740px;
+    margin: auto;
+}
+
+header {
+    background-color: #362b34;
+    position: relative;
+}
+
+.headerflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.ring {
+    max-width: 10%;
+    position: relative;
+}
+
+.navtop ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    column-gap:100px;
+}
+
+.bc {
+
+    border-radius: 0px;
+    box-shadow: -3px 3px #000000;
+}
+
+.navtop a {
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    color: #F3D9B5;
+    text-decoration: underline #F3D9B5;
+}
+
+.headergold {
+    background-color: #ffffff;
+    text-align: right;
+    padding: 30px 0;
+}
+
+.feature {
+    background-image: url("../imgs/shire_map.jpg");
+    background-size: cover;
+    min-height: 50vh;
+    max-height: 10vh;
+    display: flex;
+}
+
+.theshire {
+    background-color: #362b34;
+    margin-top: 0%;  
+    border-radius: 0px;
+    box-shadow: -10px 10px;
+}
+
+.thehobbits {
+    text-align: center;
+    background-color: #362b34;
+    border-radius: 0px;
+    box-shadow: -10px 10px;
+}
+
+.thehistory {
+    max-width: fit-content;
+    text-align: end;
+    background-color: #362b34;
+    border-radius: 0px;
+    box-shadow: -10px 10px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-gap: 10%;
+}
+
+
+.info {
+    background: linear-gradient(180.63deg, #5b6659 21.29%, #453643 99.68%);
+}
+
+.img-text {
+    background-color: #8DAA91;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    align-items: center;
+    border-radius: 0px;
+    box-shadow: -10px 10px;
+}
+
+.img-texth {
+    font-size: 60%;
+    background-color: #8DAA91;
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    align-items: center;
+    border-radius: 0px;
+    box-shadow: -10px 10px;
+    min-width: 20px;
+}
+
+.img-text--alternate {
+    margin-top: 100px;
+}
+
+.img-text--alternate img {
+    grid-column: 3;
+}
+
+.img-text--alternate div {
+    grid-row: 1;
+    grid-column: 2;
+    text-align: right;
+}
+
+footer {
+    background-color: #362b34;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+}
+
+.footer-grid div:nth-child(2) {
+    text-align: center;
+}
+
+.footer-grid div:last-child {
+    text-align: right;
+}
+
+/* COMPONENTS */
+
+.button {
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .5s;
+    margin-top: 20px;
+}
+
+
+.button-gold {
+    background-color: #8DAA91;
+    text-shadow: 0px 0px 20px #453643;
+}
+
+.button-gold:hover {
+    background-color: #a1c0a5;
+    color: rgb(0, 0, 0);
+}
+
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    /* margin: 0; */
+}
+
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    /* margin: 0; */
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    /* margin: 0; */
+}
+
+.txth {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 18px 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F3D9B5;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:620px) {
+    .feature {
+        background-image: url("../imgs/shire_map.jpg");
+        min-height: 50vh;
+    }
+    .navtop ul{
+        list-style-type: none;
+        padding-right: 1vh;
+        margin: 0;
+        column-gap:30px;
+    }
+
+}
+@media screen and (max-width:520px) {
+    .feature {
+        background-image: url("../imgs/shire_map.jpg");
+        min-height: 50vh;
+    }
+    .navtop ul{
+        list-style-type: none;
+        padding-right: 1vh;
+        margin: 0;
+        column-gap:10px;
+    }
+
+}
+@media screen and (max-width:420px) {
+    .feature {
+        background-image: url("../imgs/shire_map.jpg");
+        min-height: 50vh;
+    }
+    .navtop ul{
+        list-style-type: none;
+        padding-right: 0vh;
+        margin: 0;
+        column-gap:10px;
+    }
+    .img-texth {
+        font-size: 70%;
+        background-color: #8DAA91;
+        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5%;
+        align-items: center;
+        border-radius: 0px;
+        box-shadow: -10px 10px;
+    }
+    .ring {
+        max-width: 0%;
+    }
+
+
+}
+@media screen and (max-width:320px) {
+    .feature {
+        background-image: url("../imgs/shire_map.jpg");
+        min-height: 50vh;
+    }
+    .navtop ul{
+        list-style-type: none;
+        padding-right: 9vh;
+        margin: 0;
+        column-gap:10px;
+        display: block;
+    }
+    .img-texth {
+        font-size: 70%;
+        background-color: #8DAA91;
+        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5%;
+        align-items: center;
+        border-radius: 0px;
+        box-shadow: -10px 10px;
+    }
+    .ring {
+        max-width: 0%;
+    }
+
+
+}
